@@ -1,5 +1,5 @@
-welcome to the hi 
+welcome to the hi .yes need to merge
 
 this is to test eature and branch
 
-this is branch 2
+this is branch .going to merge this
