@@ -1,1 +1,9 @@
+
 welcome to the hi git
+
+welcome to the hi .yes need to merge
+
+this is to test eature and branch
+
+this is branch .going to merge this
+
