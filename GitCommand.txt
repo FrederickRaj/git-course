@@ -1,0 +1,97 @@
+to know which version of the git
+git --version
+
+everytime you push you want to push it with identity and after pushing the code we have to identity of the user .( since multiple will work , you have create your account . so check the identity).
+
+so we have to have our own configuration. way to check.
+git --global --list
+
+
+3) if we wan to set the user
+git --global user.name "navin"   // way to set the user.
+git --global user.email "fred@gmail.com" 
+
+By setting above 2 we can make our git own.
+
+
+if you wan to change the name to main not master
+4) git init -> this command will create local repository. 
+working directory is different from local repository.
+Local repository has staging area and commit history area and it is all maintained under the.git folder which is hidden.
+
+
+git -init -b main // this we are telling git . use main as the parent folder not master.
+
+Commit:
+5)git commit -m  "comments"
+
+direct commit:
+git commit -m -a "direct commit".
+Note: this will happen atleast 1 time it shoud=ld be in staging area and 2 nd time onwards you commit directly.
+
+
+git log -> we can see how much commit we have done till now
+
+Diff between working directory and repository.
+after adding . diff between staged and respository
+6)git diff  -> it will show the difference between the commited and your working directory
+
+7)after adding to the staging you want to find the diff
+git diff will not work.
+
+8)so add the staging area and then find the diff then
+git diff --staged
+
+9)if working area and staging area then 
+git diff
+
+
+git remove:
+=========
+
+first we have remove the file from git local repostiory and not in workspace
+
+git rm --cached creds.txt
+
+2) now delete from workspace .
+3) then commmit -m "".
+
+github repository
+================
+
+suppose we need to collobrate . like we create our feature and then another person works on another module. 
+In that case we need to remote repository apart from local repository.
+
+There are various repository
+1)Github  (commonly used).
+2)Bitbucket (provided by atlassian)
+3)
+
+
+Github:
+------- 
+
+create the name same like remote repository
+
+then initlaise in local
+
+now to make it is as main 
+git branch -M main
+
+https- everytime it will ask for login , instead we can go for ssh
+ssh - command - ssh-keygen -o
+everything give enter since we dont create password.
+
+goto folder .ssh 
+ls -a
+
+id_rsa  (private)
+id_rsa.pub (public) - just put cat we will find the key there.
+how to use it.
+
+goto gihub profile 
+settings-> ssh&GPH keys
+click on new sshkey -> give title -> gitcourse1.paste your key 
+
+now its connected. it will check everytime between local and remote it is same.
+
