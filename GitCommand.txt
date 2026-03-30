@@ -76,10 +76,10 @@ create the name same like remote repository
 then initlaise in local
 
 now to make it is as main 
-git branch -M main
+   git branch -M main
 
 https- everytime it will ask for login , instead we can go for ssh
-ssh - command - ssh-keygen -o
+ssh - command -> ssh-keygen -o
 everything give enter since we dont create password.
 
 goto folder .ssh 
@@ -94,4 +94,10 @@ settings-> ssh&GPH keys
 click on new sshkey -> give title -> gitcourse1.paste your key 
 
 now its connected. it will check everytime between local and remote it is same.
+
+git remote add origin git@github.com:FrederickRaj/git-course.git
+git push -u origin main
+
+
+git pull origin main --rebase
 
